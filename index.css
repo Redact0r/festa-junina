@@ -1,0 +1,60 @@
+.hidden {
+  display: none;
+}
+
+body,
+header,
+form,
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+form,
+label,
+span {
+  margin: 1em;
+}
+
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #1e3f66;
+  color: white;
+}
+
+p,
+span,
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  width: 90vw;
+  height: 25vh;
+}
+
+input {
+  width: 90vw;
+  height: 3vh;
+}
+
+@media screen and (min-width: 600px) {
+  textarea {
+    width: 50vw;
+    height: 25vh;
+  }
+
+  input {
+    width: 50vw;
+    height: 6vh;
+  }
+
+  body {
+    max-width: 800px;
+  }
+}

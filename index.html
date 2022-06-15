@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="lng-por hidden">Escreva Seu Correio Elegante!</h1>
+      <h1 class="lng-eng">Write Your Elegant Mail!</h1>
+      <button class="lng-btn" id="lng-btn">Eng/Por</button>
+    </header>
+
+    <section>
+      <p class="lng-por hidden">
+        Se você pode ler isso, você já sabe o que fazer :). Escreva!
+      </p>
+      <p class="lng-eng">
+        <em>Correio elegante</em> (elegant mail) is a popular Brazilian
+        festivity in celebration of Festa Junina. Write an anonymous message to
+        someone in the server, and we will have a special channel for them to be
+        specially delivered by Popebot. Please keep your messages short and
+        sweet (limit: 1800 characters) to make sure it fits in one post.
+      </p>
+    </section>
+    <form action="https://formspree.io/f/xvovjyoj" method="POST">
+      <label>
+        <span class="lng-por hidden">Recebedor:</span>
+        <span class="lng-eng">Recipient:</span>
+        <input type="text" name="to-name" />
+      </label>
+      <label>
+        <span class="lng-por hidden">Sua mensagem:</span>
+        <span class="lng-eng">Your message:</span>
+        <textarea name="message" maxlength="1800"></textarea>
+      </label>
+      <label>
+        <span class="lng-por hidden"
+          >A partir de... (Você não precisa usar seu nome verdadeiro! por
+          exemplo, "seu admirador secreto")</span
+        >
+        <span class="lng-eng"
+          >Who is it from? (You don't have to use your real name! ie, "your
+          secret admirer")</span
+        >
+        <input type="text" name="from-name" />
+      </label>
+      <button type="submit">
+        <span class="lng-por hidden">Envie Para a Equipe de Mods!</span>
+        <span class="lng-eng">Submit to the Mod Team!</span>
+      </button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
